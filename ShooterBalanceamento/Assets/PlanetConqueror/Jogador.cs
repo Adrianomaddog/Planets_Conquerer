@@ -3,21 +3,23 @@ using System.Collections;
 
 public class Jogador : MonoBehaviour {
 
-	[SerializeField]float velocidade_X;
-	[SerializeField]float velocidade_Y;
-	[SerializeField]float vida;
-	[SerializeField]float dano;
-	[SerializeField]float Jogador_velocidade_tiro;
-	[SerializeField]float Jogador_cadencia_tiro;
+	public float velocidade_X;
+	public float velocidade_Y;
+	public float vida;
+	public float dano;
+	public float Jogador_velocidade_tiro;
+	public float Jogador_cadencia_tiro;
 	float Jogador_proximo_tiro = 0.0f;
 	float move_X;
 	float move_Y;
 	GameObject Jog;
 
+	//public float vel = 2.0f;
+
 
 	// Use this for initialization
 	void Start () {
-		Jog = GameObject.FindGameObjectWithTag("Player");
+		//Jog = GameObject.FindGameObjectWithTag("Player");
 
 	
 	}
@@ -25,6 +27,16 @@ public class Jogador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jogador_move();
+		/*if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
+			Jogador_move();
+			Jogdor_atira();
+		}*/
+
+
+
+
+
+
 		if(Input.GetKey(KeyCode.Space)){
 			Jogdor_atira();
 
@@ -35,13 +47,18 @@ public class Jogador : MonoBehaviour {
 
 
 	void Jogador_move(){
+
+		//move_X = Input.GetTouch(0).deltaPosition.x ;
 		move_X = Input.GetAxis("Horizontal") * velocidade_X;
-		//transform.Translate(move_X,0,0);
-		
+
+		//move_X = Input.GetTouch(0).deltaPosition.y ;
+		//Vector2 mover = Input.GetTouch(0).deltaPosition;
 		move_Y = Input.GetAxis("Vertical") * velocidade_Y;
-		//transform.Translate(0,0,move_Y);
+
 
 		gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (move_X, 0, move_Y) ;
+
+		//gameObject.GetComponent<Transform>().Translate(mover.x * vel,0,mover.y * vel);
 	}
 
 	void Jogdor_atira(){
