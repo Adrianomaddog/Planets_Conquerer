@@ -1,42 +1,69 @@
 ﻿using UnityEngine;
 using System.Collections;
+//using System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true);
 
 public class inimigo_01 : MonoBehaviour {
 
-	public Transform goal;
-	public Transform final;
-	Vector2 screenPosition;
+	public GameObject goal;
+	public GameObject final;
+
+	bool liga = false;
+	//Transform fim;
 
 	NavMeshAgent agent;
 
 	// Use this for initialization
 	void Start () {
+		goal = GameObject.Find("Jogador");
+		final = GameObject.Find("fim");
 		agent = GetComponent<NavMeshAgent>();
-		agent.destination = goal.position; 
+		//agent.destination = goal.GetComponent<Transform>().position; 
+		gameObject.GetComponent<NavMeshAgent>().enabled = false;
+		//fim.position = final.GetComponent<Transform>().position;
 
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(agent.remainingDistance < 0.5f){
-			agent.destination = final.position;
-		}
 
-			screenPosition = Camera.main.WorldToScreenPoint(transform.position);
-		if (screenPosition.y > Screen.height || screenPosition.y < 0 || screenPosition.x > Screen.width || screenPosition.x < 0)
-		{
-			Destroy(gameObject);
-			Debug.Log("Destroy");
-		}
+		Physics.IgnoreLayerCollision(9,9);
+
+			if(liga == true){
+				gameObject.GetComponent<NavMeshAgent>().enabled = true;
+				if(agent.remainingDistance < 0.5f){
+					agent.destination = final.GetComponent<Transform>().position;
+				}
+
+				goal = GameObject.Find("Jogador");
+
+				agent.destination = goal.GetComponent<Transform>().position;
+
+
+				//liga = false;
+			}
+
 
 		
 	}
 	
 	void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath + "log/log.txt", true))
+			{
+				file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+			}
+
 			Destroy(gameObject);
 		}
 
+	}
+	void OnTriggerEnter(Collider col){
+		if(col.gameObject.name == "frente"){
+			liga = true;
+		}
+		if(col.gameObject.name == "traz"){
+			Destroy (gameObject);
+		}
 	}
 }
