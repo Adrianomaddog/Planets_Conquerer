@@ -58,6 +58,10 @@ public class camera_apecto : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		gameObject.GetComponent<Transform>().Translate(rolagem);
+		if(Input.GetKey(KeyCode.Escape)){
+			Application.Quit();
+		}
+
 	
 	}
 }

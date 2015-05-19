@@ -12,14 +12,16 @@ public class Jogador : MonoBehaviour {
 	float Jogador_proximo_tiro = 0.0f;
 	float move_X;
 	float move_Y;
-	GameObject Jog;
+
 
 	//public float vel = 2.0f;
 
 
 	// Use this for initialization
 	void Start () {
-		//Jog = GameObject.FindGameObjectWithTag("Player");
+		vida = 100;
+		Time.timeScale = 1.0f;
+
 
 	
 	}
@@ -27,6 +29,14 @@ public class Jogador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jogador_move();
+		if(vida <= 0){
+
+			Time.timeScale = 0.0f;
+			if(Input.GetKey(KeyCode.C)){
+				Application.LoadLevel("cena_teste");
+			}
+			//Destroy (gameObject);
+		}
 		/*if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
 			Jogador_move();
 			Jogdor_atira();
@@ -79,6 +89,18 @@ public class Jogador : MonoBehaviour {
 			Jogador_tiro.GetComponent<Rigidbody>().velocity += new Vector3(0.0f,0.0f,1.0f) * Jog_vel_tiro;
 
 		}
+	}
+
+	void OnCollisionEnter(Collision col){
+		if(col.gameObject.name == "inimigo_02_tiro(Clone)"){
+			vida -= 10;
+		}
+	}
+	void OnGUI(){
+		if(vida <= 0){
+			GUI.TextArea(new Rect (10,10,200,100),"FIM DE JOGO \nc - jogar novamente \nesc - sair");
+		}
+
 	}
 }
 

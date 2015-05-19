@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true);
 
 public class inimigo_01 : MonoBehaviour {
 
@@ -49,7 +48,7 @@ public class inimigo_01 : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath + "log/log.txt", true))
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath + "/log.txt", true))
 			{
 				file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 			}
