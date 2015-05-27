@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Cloud.Analytics;
+using System.Collections.Generic;
 
 public class Jogador : MonoBehaviour {
 
@@ -94,6 +96,15 @@ public class Jogador : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "inimigo_02_tiro(Clone)"){
 			vida -= 10;
+			UnityAnalytics.CustomEvent("Dano_no_player", new Dictionary<string, object>
+			                           {
+				{ "tipo_inimigo", "torre" },
+				{ "posicao", gameObject.transform.position },
+				{ "tempo", Time.realtimeSinceStartup },
+				{ "vida" , vida}
+			});
+
+
 		}
 	}
 	void OnGUI(){

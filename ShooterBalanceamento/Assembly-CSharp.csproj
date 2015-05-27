@@ -39,25 +39,37 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Unity5/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Unity5/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\PlanetConqueror\Jogador.cs" />
      <Compile Include="Assets\PlanetConqueror\Jogador_tiro.cs" />
+     <Compile Include="Assets\PlanetConqueror\UnityAnalyticsIntegration.cs" />
      <Compile Include="Assets\PlanetConqueror\camera_apecto.cs" />
      <Compile Include="Assets\PlanetConqueror\fundo.cs" />
+     <Compile Include="Assets\PlanetConqueror\gerente.cs" />
      <Compile Include="Assets\PlanetConqueror\inimigo_01.cs" />
      <Compile Include="Assets\PlanetConqueror\inimigo_02.cs" />
      <Compile Include="Assets\PlanetConqueror\inimigo_03.cs" />
      <Compile Include="Assets\PlanetConqueror\tiro.cs" />
      <None Include="Assets\log.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Cloud.Analytics">
+ <HintPath>D:/UnityProj/Planets_Conquerer/ShooterBalanceamento/Assets/Plugins/UnityEngine.Cloud.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Cloud.Analytics.Util">
+ <HintPath>D:/UnityProj/Planets_Conquerer/ShooterBalanceamento/Assets/Plugins/UnityEngine.Cloud.Analytics.Util.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

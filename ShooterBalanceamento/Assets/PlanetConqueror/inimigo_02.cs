@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Cloud.Analytics;
+using System.Collections.Generic;
 
 public class inimigo_02 : MonoBehaviour {
 	public Transform alvo;
@@ -61,10 +63,17 @@ public class inimigo_02 : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
-			{
-				file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
-			}
+			//using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+			//{
+				//file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+			//}
+			UnityAnalytics.CustomEvent("Morte_inimigo_02", new Dictionary<string, object>
+			                           {
+				{ "tipo_inimigo", "torre" },
+				{ "posicao", gameObject.transform.position },
+				{ "tempo", Time.realtimeSinceStartup },
+				//{ "vida" , vida}
+			});
 			Destroy(gameObject);
 
 		}

@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{733AB0C8-8EA7-C8DA-E3B8-D922B527E328}") = "ShooterBalanceamento", "Assembly-CSharp-firstpass-vs.csproj", "{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}"
+EndProject
 Project("{733AB0C8-8EA7-C8DA-E3B8-D922B527E328}") = "ShooterBalanceamento", "Assembly-CSharp-vs.csproj", "{0288C41C-D148-CC8F-1AF1-4062DBBECA95}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370BC9E3-A34E-9A9D-03F8-CBD5544AF1C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																													GlobalSection(MonoDevelopProperties) = preSolution
+																																																							GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
