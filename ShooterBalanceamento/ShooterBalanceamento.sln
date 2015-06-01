@@ -5,6 +5,8 @@ Project("{733AB0C8-8EA7-C8DA-E3B8-D922B527E328}") = "ShooterBalanceamento", "Ass
 EndProject
 Project("{733AB0C8-8EA7-C8DA-E3B8-D922B527E328}") = "ShooterBalanceamento", "Assembly-CSharp.csproj", "{0288C41C-D148-CC8F-1AF1-4062DBBECA95}"
 EndProject
+Project("{733AB0C8-8EA7-C8DA-E3B8-D922B527E328}") = "ShooterBalanceamento", "Assembly-CSharp-Editor.csproj", "{2812B41F-0643-CA05-DFE4-CB49F8C9776E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0288C41C-D148-CC8F-1AF1-4062DBBECA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2812B41F-0643-CA05-DFE4-CB49F8C9776E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2812B41F-0643-CA05-DFE4-CB49F8C9776E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2812B41F-0643-CA05-DFE4-CB49F8C9776E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2812B41F-0643-CA05-DFE4-CB49F8C9776E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

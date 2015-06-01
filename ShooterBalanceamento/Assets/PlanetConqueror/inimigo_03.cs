@@ -6,17 +6,24 @@ public class inimigo_03 : MonoBehaviour {
 	public float Ini_03_cadencia_tiro;
 	public float Ini_03_vel_tiro;
 	float Inimigo_03_proximo_tiro = 0.0f;
+	public int vida;
+	public int xp;
+	GameObject jog;
+	GameObject ger;
+	GA_Design evento;
 	
 	bool liga = false;
 	
 	// Use this for initialization
 	void Start () {
-		gameObject.GetComponent<MeshRenderer>().enabled = false;
-		gameObject.GetComponent<Rigidbody>().isKinematic = true;
+		//gameObject.GetComponent<MeshRenderer>().enabled = false;
+		//gameObject.GetComponent<Rigidbody>().isKinematic = true;
 		//gameObject.GetComponent<BoxCollider>().enabled = false;
 		//gameObject.GetComponent<>().enabled = false;
 		
 		alvo = GameObject.Find("Jogador").GetComponent<Transform>();
+		jog = GameObject.Find ("Jogador");
+		ger = GameObject.Find ("gerente");
 		
 	}
 	
@@ -27,9 +34,14 @@ public class inimigo_03 : MonoBehaviour {
 		if(liga == true){//gameObject.GetComponent<Transform>().Translate( new Vector3 (0.0f,0.0f,-0.03f));
 			//gameObject.GetComponent<Rigidbody>().rotation.SetLookRotation(alvo.position);
 			Inimigo_03_atira();
-			gameObject.GetComponent<Transform>().Translate(new Vector3 (0.0f, 0.0f , 0.05f));
+			gameObject.GetComponent<Transform>().Translate(new Vector3 (0.0f, 0.0f , 0.02f));
 			
-			
+			if(vida <= 0){
+
+				ger.GetComponent<gerente>().experiencia += xp;
+				Destroy(gameObject);
+
+			}
 			/*screenPosition = Camera.main.WorldToScreenPoint(transform.position);
 			if (screenPosition.y > Screen.height || screenPosition.y < 0 || screenPosition.x > Screen.width || screenPosition.x < 0)
 			{
@@ -70,11 +82,12 @@ public class inimigo_03 : MonoBehaviour {
 		}
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
 			if(liga == true){
-				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
-				{
-					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
-				}
-				Destroy(gameObject);
+				//using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+				//{
+				//	file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+				//}
+				vida -= jog.GetComponent<Jogador>().dano;
+				//Destroy(gameObject);
 			}
 			if(liga == false){
 				Physics.IgnoreCollision(gameObject.GetComponent<Rigidbody>().GetComponent<Collider>() , col.gameObject.GetComponent<Rigidbody>().GetComponent<Collider>());
@@ -84,12 +97,12 @@ public class inimigo_03 : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider col){
-		if(col.gameObject.name == "traz"){
-			liga = true;
-			gameObject.GetComponent<MeshRenderer>().enabled = true;
-			gameObject.GetComponent<Rigidbody>().isKinematic = false;
-		}
 		if(col.gameObject.name == "frente"){
+			liga = true;
+			//gameObject.GetComponent<MeshRenderer>().enabled = true;
+			//gameObject.GetComponent<Rigidbody>().isKinematic = false;
+		}
+		if(col.gameObject.name == "traz"){
 			if(liga == true){
 				Destroy (gameObject);
 			}

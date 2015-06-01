@@ -7,6 +7,9 @@ public class inimigo_01 : MonoBehaviour {
 
 	public GameObject goal;
 	public GameObject final;
+	public GameObject gerente;
+	public int vida;
+	public int xp;
 
 	bool liga = false;
 	//Transform fim;
@@ -21,7 +24,7 @@ public class inimigo_01 : MonoBehaviour {
 		//agent.destination = goal.GetComponent<Transform>().position; 
 		gameObject.GetComponent<NavMeshAgent>().enabled = false;
 		//fim.position = final.GetComponent<Transform>().position;
-
+		gerente = GameObject.Find("gerente");
 	
 	}
 	
@@ -39,6 +42,10 @@ public class inimigo_01 : MonoBehaviour {
 				goal = GameObject.Find("Jogador");
 
 				agent.destination = goal.GetComponent<Transform>().position;
+				if(vida <= 0){
+					gerente.GetComponent<gerente>().experiencia += xp;
+					Destroy(gameObject);
+				}
 
 
 				//liga = false;
@@ -57,12 +64,12 @@ public class inimigo_01 : MonoBehaviour {
 			UnityAnalytics.CustomEvent("Morte_inimigo_1", new Dictionary<string, object>
 			                           {
 				{ "tipo_inimigo", "kamikaze" },
-				{ "posicao", gameObject.transform.position },
+				//{ "posicao", gameObject.transform.position },
 				{ "tempo", Time.realtimeSinceStartup },
 				//{ "vida" , vida}
 			});
-
-			Destroy(gameObject);
+			vida -= goal.GetComponent<Jogador>().dano;
+			//Destroy(gameObject);
 		}
 
 	}

@@ -56,7 +56,16 @@
      <Compile Include="Assets\Plugins\UnityAnalytics\WindowsFileSystem.cs" />
      <Compile Include="Assets\Plugins\UnityAnalytics\WindowsMetroWrapper.cs" />
      <Compile Include="Assets\Plugins\UnityAnalytics\iOSWrapper.cs" />
+     <None Include="Assets\GameAnalytics\Plugins\Framework\Shaders\GA_HeatMapSolidOverlay.shader" />
+     <None Include="Assets\GameAnalytics\Plugins\Framework\Shaders\GA_HeatMapTransparentOverlay.shader" />
+     <None Include="Assets\GameAnalytics\Plugins\Framework\Shaders\GA_HeatMapSolid.shader" />
      <None Include="Assets\log.txt" />
+     <None Include="Assets\GameAnalytics\Plugins\Framework\Shaders\GA_HeatMapTransparent.shader" />
+     <None Include="Assets\GameAnalytics\Plugins\WebPlayer\Readme_WebPlayer.txt" />
+     <None Include="Assets\GameAnalytics\Plugins\iOS\iOS_Readme.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\GameAnalytics\Plugins\WebPlayer\crossdomain.xml" />
+     <None Include="Assets\GameAnalytics\Plugins\Android\Android_Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

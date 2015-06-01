@@ -2,12 +2,18 @@
 using System.Collections;
 using UnityEngine.Cloud.Analytics;
 using System.Collections.Generic;
+//using GameAnalyticsSDK;
+//using 
 
 public class inimigo_02 : MonoBehaviour {
 	public Transform alvo;
 	public float Ini_02_cadencia_tiro;
 	public float Ini_02_vel_tiro;
 	float Inimigo_02_proximo_tiro = 0.0f;
+	public int vida; 
+	GameObject gere;
+	GameObject jog;
+	public int xp;
 
 	bool liga = false;
 
@@ -15,6 +21,9 @@ public class inimigo_02 : MonoBehaviour {
 	void Start () {
 
 		alvo = GameObject.Find("Jogador").GetComponent<Transform>();
+		gere = GameObject.Find("gerente");
+		jog = GameObject.Find("Jogador");
+
 	
 	}
 	
@@ -25,7 +34,11 @@ public class inimigo_02 : MonoBehaviour {
 		//gameObject.GetComponent<Rigidbody>().rotation.SetLookRotation(alvo.position);
 			Inimigo_02_atira();
 
+			if(vida <= 0){
+				gere.GetComponent<gerente>().experiencia += xp;
+				Destroy(gameObject);
 
+			}
 		
 			/*screenPosition = Camera.main.WorldToScreenPoint(transform.position);
 			if (screenPosition.y > Screen.height || screenPosition.y < 0 || screenPosition.x > Screen.width || screenPosition.x < 0)
@@ -67,14 +80,18 @@ public class inimigo_02 : MonoBehaviour {
 			//{
 				//file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 			//}
+			//gam
 			UnityAnalytics.CustomEvent("Morte_inimigo_02", new Dictionary<string, object>
 			                           {
 				{ "tipo_inimigo", "torre" },
-				{ "posicao", gameObject.transform.position },
+				//{ "posicao", gameObject.transform.position },
 				{ "tempo", Time.realtimeSinceStartup },
 				//{ "vida" , vida}
 			});
-			Destroy(gameObject);
+			vida -= jog.GetComponent<Jogador>().dano;
+
+
+			//Destroy(gameObject);
 
 		}
 		

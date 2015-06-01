@@ -6,7 +6,7 @@ public class tiro : MonoBehaviour {
 	 
 	// Use this for initialization
 	void Start () {
-		Destroy(gameObject,2.0f);	
+		Destroy(gameObject,4.5f);	
 	}
 	
 	// Update is called once per frame

@@ -46,10 +46,10 @@ namespace UnityEngine.Cloud.Analytics
 			#endif
 		}
 
-		public static void SetLogLevel(LogLevel logLevel, bool enableLogging=true)
+		public static void SetLogLevel(LogLevel logLevel, bool enableLogging/*=true*/)
 		{
 			#if UNITY_ANALYTICS_SUPPORTED_PLATFORM
-			Logger.EnableLogging = enableLogging;
+			Logger.EnableLogging = true;// enableLogging;
 			Logger.SetLogLevel((int)logLevel);
 			#endif
 		}

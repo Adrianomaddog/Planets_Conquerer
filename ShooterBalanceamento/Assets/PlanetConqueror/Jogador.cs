@@ -7,8 +7,8 @@ public class Jogador : MonoBehaviour {
 
 	public float velocidade_X;
 	public float velocidade_Y;
-	public float vida;
-	public float dano;
+	public int vida;
+	public int dano;
 	public float Jogador_velocidade_tiro;
 	public float Jogador_cadencia_tiro;
 	float Jogador_proximo_tiro = 0.0f;
@@ -36,6 +36,7 @@ public class Jogador : MonoBehaviour {
 			Time.timeScale = 0.0f;
 			if(Input.GetKey(KeyCode.C)){
 				Application.LoadLevel("cena_teste");
+				GameObject.Find("gerente").GetComponent<gerente>().experiencia = 0;
 			}
 			//Destroy (gameObject);
 		}
@@ -99,7 +100,7 @@ public class Jogador : MonoBehaviour {
 			UnityAnalytics.CustomEvent("Dano_no_player", new Dictionary<string, object>
 			                           {
 				{ "tipo_inimigo", "torre" },
-				{ "posicao", gameObject.transform.position },
+				//{ "posicao", gameObject.transform.position },
 				{ "tempo", Time.realtimeSinceStartup },
 				{ "vida" , vida}
 			});
