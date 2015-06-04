@@ -37,6 +37,10 @@ public class inimigo_03 : MonoBehaviour {
 			gameObject.GetComponent<Transform>().Translate(new Vector3 (0.0f, 0.0f , 0.02f));
 			
 			if(vida <= 0){
+				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+				{
+					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+				}
 
 				ger.GetComponent<gerente>().experiencia += xp;
 				Destroy(gameObject);

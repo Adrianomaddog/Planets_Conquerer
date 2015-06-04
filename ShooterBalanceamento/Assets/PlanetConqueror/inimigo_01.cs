@@ -43,6 +43,10 @@ public class inimigo_01 : MonoBehaviour {
 
 				agent.destination = goal.GetComponent<Transform>().position;
 				if(vida <= 0){
+				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+				{
+					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+				}
 					gerente.GetComponent<gerente>().experiencia += xp;
 					Destroy(gameObject);
 				}
@@ -59,15 +63,15 @@ public class inimigo_01 : MonoBehaviour {
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
 			//using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath + "/log.txt", true))
 			//{
-				//file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+			//	file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 			//}
-			UnityAnalytics.CustomEvent("Morte_inimigo_1", new Dictionary<string, object>
-			                           {
-				{ "tipo_inimigo", "kamikaze" },
+			//UnityAnalytics.CustomEvent("Morte_inimigo_1", new Dictionary<string, object>
+			                           //{
+				//{ "tipo_inimigo", "kamikaze" },
 				//{ "posicao", gameObject.transform.position },
-				{ "tempo", Time.realtimeSinceStartup },
+				//{ "tempo", Time.realtimeSinceStartup },
 				//{ "vida" , vida}
-			});
+			//});
 			vida -= goal.GetComponent<Jogador>().dano;
 			//Destroy(gameObject);
 		}

@@ -9,19 +9,29 @@ public class Jogador : MonoBehaviour {
 	public float velocidade_Y;
 	public int vida;
 	public int dano;
+	public int vida_max;
+	//public int dano_max;
 	public float Jogador_velocidade_tiro;
 	public float Jogador_cadencia_tiro;
 	float Jogador_proximo_tiro = 0.0f;
 	float move_X;
 	float move_Y;
+	bool fj = false;
+
+	GameObject cam;
+	//GameObject ger;
+	GameObject pu;
+	GameObject tela_final;
 
 
-	//public float vel = 2.0f;
+	public float vel = 0.5f;
 
 
 	// Use this for initialization
 	void Start () {
-		vida = 100;
+		cam = GameObject.Find("Main Camera");
+		vida = vida_max;
+
 		Time.timeScale = 1.0f;
 
 
@@ -31,13 +41,18 @@ public class Jogador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jogador_move();
+		Jogdor_atira();
 		if(vida <= 0){
 
+
 			Time.timeScale = 0.0f;
-			if(Input.GetKey(KeyCode.C)){
-				Application.LoadLevel("cena_teste");
+			cam.GetComponent<camera_apecto>().rolagem.y = 0.00f;
+			//if(Input.GetKey(KeyCode.C)){
 				GameObject.Find("gerente").GetComponent<gerente>().experiencia = 0;
-			}
+			Fim_de_jogo();
+				//Application.LoadLevel("cena_teste");
+
+			//}
 			//Destroy (gameObject);
 		}
 		/*if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
@@ -60,18 +75,25 @@ public class Jogador : MonoBehaviour {
 
 
 	void Jogador_move(){
-
-		//move_X = Input.GetTouch(0).deltaPosition.x ;
-		move_X = Input.GetAxis("Horizontal") * velocidade_X;
-
-		//move_X = Input.GetTouch(0).deltaPosition.y ;
-		//Vector2 mover = Input.GetTouch(0).deltaPosition;
-		move_Y = Input.GetAxis("Vertical") * velocidade_Y;
+		/********** CONTROLES MOBILE *********/
 
 
-		gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (move_X, 0, move_Y) ;
+		Vector2 mover = Input.GetTouch(0).deltaPosition;
 
-		//gameObject.GetComponent<Transform>().Translate(mover.x * vel,0,mover.y * vel);
+		gameObject.GetComponent<Transform>().Translate(-mover.x * vel,0,-mover.y * vel);
+
+		/******************************************/
+
+
+
+
+		/*************** CONTROLE DE PC *************/
+		//move_X = Input.GetAxis("Horizontal") * velocidade_X;
+		//move_Y = Input.GetAxis("Vertical") * velocidade_Y;
+
+		//gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (move_X, 0, move_Y) ;
+		/*****************************************/
+
 	}
 
 	void Jogdor_atira(){
@@ -97,23 +119,59 @@ public class Jogador : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		if(col.gameObject.name == "inimigo_02_tiro(Clone)"){
 			vida -= 10;
-			UnityAnalytics.CustomEvent("Dano_no_player", new Dictionary<string, object>
-			                           {
-				{ "tipo_inimigo", "torre" },
-				//{ "posicao", gameObject.transform.position },
-				{ "tempo", Time.realtimeSinceStartup },
-				{ "vida" , vida}
-			});
+			//UnityAnalytics.CustomEvent("Dano_no_player", new Dictionary<string, object>
+			                          // {
+				//{ "tipo_inimigo", "torre" },
+				////{ "posicao", gameObject.transform.position },
+				//{ "tempo", Time.realtimeSinceStartup },
+				//{ "vida" , vida}
+			//});
+
+
+		}
+		if(col.gameObject.tag == "kamikaze"){
+			vida -= 15;
+			Destroy(col.gameObject);
 
 
 		}
 	}
-	void OnGUI(){
-		if(vida <= 0){
-			GUI.TextArea(new Rect (10,10,200,100),"FIM DE JOGO \nc - jogar novamente \nesc - sair");
+
+	void OnTriggerEnter(Collider col){
+		if(col.gameObject.name ==  "transicao"){
+			cam.GetComponent<camera_apecto>().rolagem.y = 0.00f;
+			Time.timeScale = 0.0f;
+			//t_liga = true;
+			pu = Instantiate(Resources.Load("Canvas_transicao")) as GameObject;
+			
+		}
+		if(col.gameObject.name ==  "final_jog"){
+			cam.GetComponent<camera_apecto>().rolagem.y = 0.00f;
+			Time.timeScale = 0.0f;
+			//t_liga = true;
+			tela_final = Instantiate(Resources.Load("telaFinal")) as GameObject;
+			
+		}
+		
+	}
+
+
+	public void Fim_de_jogo(){
+		if(fj == false){
+			tela_final = Instantiate(Resources.Load("telaFinal")) as GameObject;
+			fj = true;
+			//GUI.TextArea(new Rect (10,10,200,100),"FIM DE JOGO \nc - jogar novamente \nesc - sair");
 		}
 
 	}
+	/*public void sair(){
+		Application.Quit();
+	}
+	public void novamente(){
+		GameObject.Find("gerente").GetComponent<gerente>().experiencia = 0;
+		Application.LoadLevel("cena_teste");
+
+	}*/
 }
 
 

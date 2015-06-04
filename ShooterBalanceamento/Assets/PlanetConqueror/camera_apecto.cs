@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class camera_apecto : MonoBehaviour {
-	Vector3 rolagem;
+	public Vector3 rolagem;
 
 
 	// Use this for initialization

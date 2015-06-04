@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine.Cloud.Analytics;
 using System.Collections.Generic;
-//using GameAnalyticsSDK;
-//using 
+//using GameAnalytics_SDK;
+ 
 
 public class inimigo_02 : MonoBehaviour {
 	public Transform alvo;
@@ -14,6 +14,7 @@ public class inimigo_02 : MonoBehaviour {
 	GameObject gere;
 	GameObject jog;
 	public int xp;
+	GA_Design ds = new GA_Design();
 
 	bool liga = false;
 
@@ -35,6 +36,11 @@ public class inimigo_02 : MonoBehaviour {
 			Inimigo_02_atira();
 
 			if(vida <= 0){
+				ds.NewEvent("novo evento", 1.0f);
+				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+				{
+					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+				}
 				gere.GetComponent<gerente>().experiencia += xp;
 				Destroy(gameObject);
 
@@ -78,16 +84,16 @@ public class inimigo_02 : MonoBehaviour {
 		if(col.gameObject.name == "Jogador_tiro(Clone)"){
 			//using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
 			//{
-				//file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+			//	file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 			//}
 			//gam
-			UnityAnalytics.CustomEvent("Morte_inimigo_02", new Dictionary<string, object>
-			                           {
-				{ "tipo_inimigo", "torre" },
+			//UnityAnalytics.CustomEvent("Morte_inimigo_02", new Dictionary<string, object>
+			                       //    {
+				//{ "tipo_inimigo", "torre" },
 				//{ "posicao", gameObject.transform.position },
-				{ "tempo", Time.realtimeSinceStartup },
+				//{ "tempo", Time.realtimeSinceStartup },
 				//{ "vida" , vida}
-			});
+			//});
 			vida -= jog.GetComponent<Jogador>().dano;
 
 
