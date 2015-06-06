@@ -59,7 +59,6 @@
      <Compile Include="Assets\PlanetConqueror\p_final.cs" />
      <Compile Include="Assets\PlanetConqueror\powerUP.cs" />
      <Compile Include="Assets\PlanetConqueror\tiro.cs" />
-     <None Include="Assets\log.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
