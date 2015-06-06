@@ -10,7 +10,7 @@ public class inimigo_03 : MonoBehaviour {
 	public int xp;
 	GameObject jog;
 	GameObject ger;
-	GA_Design evento;
+	//GA_Design evento;
 	
 	bool liga = false;
 	
@@ -24,13 +24,15 @@ public class inimigo_03 : MonoBehaviour {
 		alvo = GameObject.Find("Jogador").GetComponent<Transform>();
 		jog = GameObject.Find ("Jogador");
 		ger = GameObject.Find ("gerente");
+		//Physics.IgnoreLayerCollision(9,9);
 		
 	}
 	
 	// Update is called once per frame
+
 	void Update () {
-		Debug.Log ("liga=" + liga);
-		Physics.IgnoreLayerCollision(9,9);
+		//Debug.Log ("liga=" + liga);
+
 		if(liga == true){//gameObject.GetComponent<Transform>().Translate( new Vector3 (0.0f,0.0f,-0.03f));
 			//gameObject.GetComponent<Rigidbody>().rotation.SetLookRotation(alvo.position);
 			Inimigo_03_atira();

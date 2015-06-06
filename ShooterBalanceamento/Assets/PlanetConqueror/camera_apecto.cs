@@ -7,6 +7,9 @@ public class camera_apecto : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//if(GameObject.Find("gerente").GetComponent<gerente>().salvo == true){
+		//	gameObject.transform.position.Set()
+		//}
 
 
 		rolagem.x = 0.0f;
@@ -14,7 +17,7 @@ public class camera_apecto : MonoBehaviour {
 		rolagem.z = 0.0f;
 
 
-		// set the desired aspect ratio (the values in this example are
+		/*// set the desired aspect ratio (the values in this example are
 		// hard-coded for 16:9, but you could make them into public
 		// variables instead so you can set them at design time)
 		float targetaspect = 2f / 3.5f;//16.0f / 9.0f;
@@ -52,7 +55,7 @@ public class camera_apecto : MonoBehaviour {
 			rect.y = 0;
 			
 			camera.rect = rect;
-		}
+		}*/
 	}
 	
 	// Update is called once per frame

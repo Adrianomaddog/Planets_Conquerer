@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Cloud.Analytics;
+//using UnityEngine.Cloud.Analytics;
 using System.Collections.Generic;
 //using GameAnalytics_SDK;
  
@@ -14,7 +14,7 @@ public class inimigo_02 : MonoBehaviour {
 	GameObject gere;
 	GameObject jog;
 	public int xp;
-	GA_Design ds = new GA_Design();
+	//GA_Design ds = new GA_Design();
 
 	bool liga = false;
 
@@ -24,19 +24,20 @@ public class inimigo_02 : MonoBehaviour {
 		alvo = GameObject.Find("Jogador").GetComponent<Transform>();
 		gere = GameObject.Find("gerente");
 		jog = GameObject.Find("Jogador");
+		Physics.IgnoreLayerCollision(9,9);
 
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Physics.IgnoreLayerCollision(9,9);
+
 		if(liga == true){//gameObject.GetComponent<Transform>().Translate( new Vector3 (0.0f,0.0f,-0.03f));
 		//gameObject.GetComponent<Rigidbody>().rotation.SetLookRotation(alvo.position);
 			Inimigo_02_atira();
 
 			if(vida <= 0){
-				ds.NewEvent("novo evento", 1.0f);
+				//ds.NewEvent("novo evento", 1.0f);
 				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
 				{
 					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );

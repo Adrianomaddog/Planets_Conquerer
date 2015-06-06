@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Cloud.Analytics;
+//using UnityEngine.Cloud.Analytics;
 using System.Collections.Generic;
 
 public class inimigo_01 : MonoBehaviour {
@@ -25,13 +25,14 @@ public class inimigo_01 : MonoBehaviour {
 		gameObject.GetComponent<NavMeshAgent>().enabled = false;
 		//fim.position = final.GetComponent<Transform>().position;
 		gerente = GameObject.Find("gerente");
+		Physics.IgnoreLayerCollision(9,9);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		Physics.IgnoreLayerCollision(9,9);
+
 
 			if(liga == true){
 				gameObject.GetComponent<NavMeshAgent>().enabled = true;
@@ -39,7 +40,7 @@ public class inimigo_01 : MonoBehaviour {
 					agent.destination = final.GetComponent<Transform>().position;
 				}
 
-				goal = GameObject.Find("Jogador");
+				//goal = GameObject.Find("Jogador");
 
 				agent.destination = goal.GetComponent<Transform>().position;
 				if(vida <= 0){

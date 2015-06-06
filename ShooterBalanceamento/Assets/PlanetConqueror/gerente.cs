@@ -2,6 +2,12 @@
 using System.Collections;
 
 public class gerente : MonoBehaviour {
+	public string nome_jogador;
+	public bool salvo = false;
+	public int svida;
+	public int sdano;
+	public int sexp;
+	public Vector3 jpos;
 
 	public int experiencia = 0;
 
@@ -12,7 +18,7 @@ public class gerente : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("exp: " + experiencia);
+		//Debug.Log ("exp: " + experiencia);
 	
 	}
 	public void b_jogar(){

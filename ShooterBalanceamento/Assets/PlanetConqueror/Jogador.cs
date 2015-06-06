@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Cloud.Analytics;
+//using UnityEngine.Cloud.Analytics;
 using System.Collections.Generic;
 
 public class Jogador : MonoBehaviour {
@@ -19,7 +19,7 @@ public class Jogador : MonoBehaviour {
 	bool fj = false;
 
 	GameObject cam;
-	//GameObject ger;
+	GameObject ger;
 	GameObject pu;
 	GameObject tela_final;
 
@@ -33,6 +33,7 @@ public class Jogador : MonoBehaviour {
 		vida = vida_max;
 
 		Time.timeScale = 1.0f;
+		ger = GameObject.Find("gerente") as GameObject;
 
 
 	
@@ -41,14 +42,14 @@ public class Jogador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jogador_move();
-		Jogdor_atira();
+		//Jogdor_atira();
 		if(vida <= 0){
 
 
 			Time.timeScale = 0.0f;
 			cam.GetComponent<camera_apecto>().rolagem.y = 0.00f;
 			//if(Input.GetKey(KeyCode.C)){
-				GameObject.Find("gerente").GetComponent<gerente>().experiencia = 0;
+				ger.GetComponent<gerente>().experiencia = 0;
 			Fim_de_jogo();
 				//Application.LoadLevel("cena_teste");
 
@@ -78,9 +79,9 @@ public class Jogador : MonoBehaviour {
 		/********** CONTROLES MOBILE *********/
 
 
-		Vector2 mover = Input.GetTouch(0).deltaPosition;
+		//Vector2 mover = Input.GetTouch(0).deltaPosition;
 
-		gameObject.GetComponent<Transform>().Translate(-mover.x * vel,0,-mover.y * vel);
+		//gameObject.GetComponent<Transform>().Translate(-mover.x * vel,0,-mover.y * vel);
 
 		/******************************************/
 
@@ -88,10 +89,10 @@ public class Jogador : MonoBehaviour {
 
 
 		/*************** CONTROLE DE PC *************/
-		//move_X = Input.GetAxis("Horizontal") * velocidade_X;
-		//move_Y = Input.GetAxis("Vertical") * velocidade_Y;
+		move_X = Input.GetAxis("Horizontal") * velocidade_X;
+		move_Y = Input.GetAxis("Vertical") * velocidade_Y;
 
-		//gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (move_X, 0, move_Y) ;
+		gameObject.GetComponent<Rigidbody>().velocity = new Vector3 (move_X, 0, move_Y) ;
 		/*****************************************/
 
 	}
@@ -139,6 +140,11 @@ public class Jogador : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.name ==  "transicao"){
+			//ger.GetComponent<gerente>().sexp = ger.GetComponent<gerente>().experiencia;
+			//ger.GetComponent<gerente>().svida = vida_max;
+			//ger.GetComponent<gerente>().sdano = dano;
+			//ger.GetComponent<gerente>().jpos = cam.GetComponent<Transform>().position;
+			//ger.GetComponent<gerente>().salvo = true;
 			cam.GetComponent<camera_apecto>().rolagem.y = 0.00f;
 			Time.timeScale = 0.0f;
 			//t_liga = true;
