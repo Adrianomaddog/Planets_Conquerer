@@ -18,6 +18,7 @@ public class Jogador : MonoBehaviour {
 	float move_Y;
 	bool fj = false;
 
+
 	GameObject cam;
 	GameObject ger;
 	GameObject pu;
@@ -68,6 +69,10 @@ public class Jogador : MonoBehaviour {
 
 		if(Input.GetKey(KeyCode.Space)){
 			Jogdor_atira();
+			if(gameObject.GetComponent<AudioSource>().isPlaying == false){
+				gameObject.GetComponent<AudioSource>().Play ();
+			}
+
 
 		}
 

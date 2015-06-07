@@ -10,6 +10,7 @@ public class inimigo_03 : MonoBehaviour {
 	public int xp;
 	GameObject jog;
 	GameObject ger;
+
 	//GA_Design evento;
 	
 	bool liga = false;
@@ -43,7 +44,9 @@ public class inimigo_03 : MonoBehaviour {
 				{
 					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 				}
-
+				//if(gameObject.GetComponent<AudioSource>().isPlaying == false){
+					gameObject.GetComponent<AudioSource>().Play();
+				//}
 				ger.GetComponent<gerente>().experiencia += xp;
 				Destroy(gameObject);
 

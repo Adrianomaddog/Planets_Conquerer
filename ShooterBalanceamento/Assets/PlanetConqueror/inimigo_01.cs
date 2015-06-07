@@ -11,6 +11,7 @@ public class inimigo_01 : MonoBehaviour {
 	public int vida;
 	public int xp;
 
+
 	bool liga = false;
 	//Transform fim;
 
@@ -25,7 +26,7 @@ public class inimigo_01 : MonoBehaviour {
 		gameObject.GetComponent<NavMeshAgent>().enabled = false;
 		//fim.position = final.GetComponent<Transform>().position;
 		gerente = GameObject.Find("gerente");
-		Physics.IgnoreLayerCollision(9,9);
+		//Physics.IgnoreLayerCollision(9,9);
 	
 	}
 	
@@ -48,6 +49,9 @@ public class inimigo_01 : MonoBehaviour {
 				{
 					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 				}
+				//if(gameObject.GetComponent<AudioSource>().isPlaying == false){
+					gameObject.GetComponent<AudioSource>().Play();
+				//}
 					gerente.GetComponent<gerente>().experiencia += xp;
 					Destroy(gameObject);
 				}
