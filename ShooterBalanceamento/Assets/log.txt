@@ -1,0 +1,23 @@
+teste Jogador (-0.1, 1.0, 30.1) 24.49016
+teste torre 1 (-1.6, 0.6, 17.7) 33.13099
+teste torre (2.0, 0.6, 17.7) 35.06972
+teste torre 3 (-1.4, 0.6, 28.7) 36.74291
+teste torre 4 (1.7, 0.6, 28.7) 36.74672
+teste torre 2 (0.2, 0.6, 27.0) 40.9838
+teste Kamikaze 1 (0.0, 1.0, 39.1) 47.36574
+teste Kamikaze 5 (1.0, 1.0, 39.7) 48.39258
+teste Kamikaze 6 (-0.1, 1.0, 41.0) 49.61862
+teste Kamikaze 3 (2.0, 1.0, 53.5) 54.95282
+teste Kamikaze 2 (2.3, 1.0, 55.9) 55.9305
+teste Kamikaze 4 (2.5, 1.0, 58.4) 57.17307
+teste Kamikaze 8 (-2.3, 1.0, 69.4) 63.21965
+teste Kamikaze 7 (-2.4, 1.0, 71.5) 64.52853
+teste Kamikaze 9 (-2.4, 1.0, 74.2) 65.58891
+teste torre 7 (-0.6, 0.6, 93.5) 75.54545
+teste torre 5 (0.9, 0.6, 93.6) 76.40691
+teste brute (-1.1, 1.2, 120.9) 88.21916
+teste brute 1 (1.9, 1.1, 142.7) 101.9035
+teste Kamikaze 12 (-0.4, 1.0, 150.4) 108.6628
+teste torre 14 (0.2, 0.6, 212.9) 153.2339
+teste torre 11 (1.7, 0.6, 214.6) 154.3109
+teste torre 13 (2.0, 0.6, 216.8) 154.6126

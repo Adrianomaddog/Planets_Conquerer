@@ -47,7 +47,7 @@ public class inimigo_01 : MonoBehaviour {
 				if(vida <= 0){
 				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
 				{
-					file.WriteLine(gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+					file.WriteLine(gerente.GetComponent<gerente>().nome_jogador + " " + gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 				}
 				//if(gameObject.GetComponent<AudioSource>().isPlaying == false){
 					gameObject.GetComponent<AudioSource>().Play();

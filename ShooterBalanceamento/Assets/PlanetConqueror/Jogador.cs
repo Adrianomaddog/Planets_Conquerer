@@ -171,6 +171,10 @@ public class Jogador : MonoBehaviour {
 		if(fj == false){
 			tela_final = Instantiate(Resources.Load("telaFinal")) as GameObject;
 			fj = true;
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
+			{
+				file.WriteLine(ger.GetComponent<gerente>().nome_jogador + " " + gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+			}
 			//GUI.TextArea(new Rect (10,10,200,100),"FIM DE JOGO \nc - jogar novamente \nesc - sair");
 		}
 

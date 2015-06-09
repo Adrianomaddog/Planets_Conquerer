@@ -1,18 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlanetConqueror\tiro.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlanetConqueror\UI_vida.cs">
     <Files>
-      <File FileName="Assets\PlanetConqueror\Jogador.cs" Line="74" Column="5" />
-      <File FileName="Assets\PlanetConqueror\gerente.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\inimigo_02.cs" Line="28" Column="5" />
-      <File FileName="Assets\PlanetConqueror\inimigo_01.cs" Line="29" Column="5" />
-      <File FileName="Assets\PlanetConqueror\inimigo_03.cs" Line="48" Column="49" />
-      <File FileName="Assets\PlanetConqueror\Jogador_tiro.cs" Line="12" Column="23" />
-      <File FileName="Assets\PlanetConqueror\UI_inGame.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\tiro.cs" Line="12" Column="23" />
+      <File FileName="Assets\PlanetConqueror\gerente.cs" Line="12" Column="4" />
+      <File FileName="Assets\PlanetConqueror\Jogador.cs" Line="176" Column="23" />
+      <File FileName="Assets\PlanetConqueror\inimigo_02.cs" Line="45" Column="6" />
+      <File FileName="Assets\PlanetConqueror\inimigo_01.cs" Line="55" Column="56" />
+      <File FileName="Assets\PlanetConqueror\inimigo_03.cs" Line="33" Column="2" />
+      <File FileName="Assets\PlanetConqueror\Jogador_tiro.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlanetConqueror\UI_inGame.cs" Line="21" Column="60" />
+      <File FileName="Assets\PlanetConqueror\tiro.cs" Line="1" Column="1" />
       <File FileName="Assets\PlanetConqueror\camera_apecto.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\powerUP.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\p_final.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlanetConqueror\powerUP.cs" Line="18" Column="1" />
+      <File FileName="Assets\PlanetConqueror\p_final.cs" Line="16" Column="3" />
+      <File FileName="Assets\PlanetConqueror\nome_jogador.cs" Line="6" Column="4" />
+      <File FileName="Assets\PlanetConqueror\UI_vida.cs" Line="17" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
