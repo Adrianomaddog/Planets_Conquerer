@@ -10,6 +10,8 @@ public class inimigo_01 : MonoBehaviour {
 	public GameObject gerente;
 	public int vida;
 	public int xp;
+    float count;
+    float ncount= 0.25f;
 
 
 	bool liga = false;
@@ -43,6 +45,18 @@ public class inimigo_01 : MonoBehaviour {
 
 				//goal = GameObject.Find("Jogador");
 
+                if (Time.time > count)
+                {
+                    count = Time.time + ncount;
+
+
+                    salvar s = new salvar();
+                    s.vida = vida;
+                    s.pos = gameObject.GetComponent<Transform>().position;
+                    s.nome = gameObject.name;
+                    gerente.GetComponent<gerente>().log2.Add(s);
+                    //Debug.Log(gerente.GetComponent<gerente>().log2[0].vida);
+                }
 				agent.destination = goal.GetComponent<Transform>().position;
 				if(vida <= 0){
 				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))

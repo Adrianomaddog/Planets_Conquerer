@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class gerente : MonoBehaviour {
@@ -11,6 +12,7 @@ public class gerente : MonoBehaviour {
 	public Vector3 jpos;
 	//public string nome_jog;
 	public GameObject nj;
+    public IList<salvar> log2 = new List<salvar>();
 
 	public int experiencia = 0;
 
@@ -22,10 +24,10 @@ public class gerente : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		//Debug.Log ("exp: " + experiencia);
+    //void Update () {
+    //    //Debug.Log ("exp: " + experiencia);
 	
-	}
+    //}
 	public void b_jogar(){
 		Application.LoadLevel("cena_teste");
 	}

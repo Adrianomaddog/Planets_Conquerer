@@ -36,6 +36,13 @@ public class inimigo_03 : MonoBehaviour {
 
 		if(liga == true){//gameObject.GetComponent<Transform>().Translate( new Vector3 (0.0f,0.0f,-0.03f));
 			//gameObject.GetComponent<Rigidbody>().rotation.SetLookRotation(alvo.position);
+
+            salvar s = new salvar();
+            s.vida = vida;
+            s.pos = gameObject.GetComponent<Transform>().position;
+            s.nome = gameObject.name;
+            ger.GetComponent<gerente>().log2.Add(s);
+
 			Inimigo_03_atira();
 			gameObject.GetComponent<Transform>().Translate(new Vector3 (0.0f, 0.0f , 0.02f));
 			

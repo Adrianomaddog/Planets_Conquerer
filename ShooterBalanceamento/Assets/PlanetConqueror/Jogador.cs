@@ -25,7 +25,7 @@ public class Jogador : MonoBehaviour {
 	GameObject tela_final;
 
 
-	public float vel = 0.5f;
+	//public float vel = 0.5f;
 
 
 	// Use this for initialization
@@ -52,6 +52,7 @@ public class Jogador : MonoBehaviour {
 			//if(Input.GetKey(KeyCode.C)){
 				ger.GetComponent<gerente>().experiencia = 0;
 			Fim_de_jogo();
+
 				//Application.LoadLevel("cena_teste");
 
 			//}
@@ -144,7 +145,8 @@ public class Jogador : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if(col.gameObject.name ==  "transicao"){
+        if (col.gameObject.name == "transicao" || col.gameObject.name == "transicao 1")
+        {
 			//ger.GetComponent<gerente>().sexp = ger.GetComponent<gerente>().experiencia;
 			//ger.GetComponent<gerente>().svida = vida_max;
 			//ger.GetComponent<gerente>().sdano = dano;
@@ -175,6 +177,14 @@ public class Jogador : MonoBehaviour {
 			{
 				file.WriteLine(ger.GetComponent<gerente>().nome_jogador + " " + gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
 			}
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log2.txt", true))
+            {
+                for (int i = 0; i < ger.GetComponent<gerente>().log2.Count; i++ )
+                {
+                    file.WriteLine(ger.GetComponent<gerente>().nome_jogador + " " +ger.GetComponent<gerente>().log2[i].nome + " " + ger.GetComponent<gerente>().log2[i].pos + " " + ger.GetComponent<gerente>().log2[i].vida);
+                }
+            }
+
 			//GUI.TextArea(new Rect (10,10,200,100),"FIM DE JOGO \nc - jogar novamente \nesc - sair");
 		}
 
