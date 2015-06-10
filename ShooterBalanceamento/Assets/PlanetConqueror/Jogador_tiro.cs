@@ -18,15 +18,15 @@ public class Jogador_tiro : MonoBehaviour {
 		
 	}
 	void OnCollisionEnter(Collision col){
-		//if(col.gameObject.GetComponent<Rigidbody>().isKinematic == false){
+
 			Destroy(gameObject);
-		//}
-		//if(col.gameObject.GetComponent<Rigidbody>().isKinematic == true){
-		//	Physics.IgnoreCollision(gameObject.GetComponent<Rigidbody>().GetComponent<Collider>() , col.gameObject.GetComponent<Rigidbody>().GetComponent<Collider>());
-		//}
+
 
 			
 
 		
+	}
+	void OnTriggerEnter(Collider col){
+		Destroy(gameObject);
 	}
 }
