@@ -47,7 +47,7 @@ public class inimigo_02 : MonoBehaviour {
 				//ds.NewEvent("novo evento", 1.0f);
 				using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
 				{
-					file.WriteLine(gere.GetComponent<gerente>().nome_jogador + " " + gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+					file.WriteLine(gere.GetComponent<gerente>().nome_jogador + "*" + gameObject.name + "*" + gameObject.transform.position + "*" + Time.realtimeSinceStartup );
 				}
 				gere.GetComponent<gerente>().experiencia += xp;
 				//if(gameObject.GetComponent<AudioSource>().isPlaying == false){

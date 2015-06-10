@@ -175,13 +175,13 @@ public class Jogador : MonoBehaviour {
 			fj = true;
 			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log.txt", true))
 			{
-				file.WriteLine(ger.GetComponent<gerente>().nome_jogador + " " + gameObject.name + " " + gameObject.transform.position + " " + Time.realtimeSinceStartup );
+				file.WriteLine(ger.GetComponent<gerente>().nome_jogador + "*" + gameObject.name + "*" + gameObject.transform.position + "*" + Time.realtimeSinceStartup );
 			}
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.dataPath + "/log2.txt", true))
             {
                 for (int i = 0; i < ger.GetComponent<gerente>().log2.Count; i++ )
                 {
-                    file.WriteLine(ger.GetComponent<gerente>().nome_jogador + " " +ger.GetComponent<gerente>().log2[i].nome + " " + ger.GetComponent<gerente>().log2[i].pos + " " + ger.GetComponent<gerente>().log2[i].vida);
+                    file.WriteLine(ger.GetComponent<gerente>().nome_jogador + "*" +ger.GetComponent<gerente>().log2[i].nome + "*" + ger.GetComponent<gerente>().log2[i].pos + "*" + ger.GetComponent<gerente>().log2[i].vida);
                 }
             }
 
