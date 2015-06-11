@@ -1,15 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlanetConqueror\Jogador_tiro.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlanetConqueror\powerUP.cs">
     <Files>
-      <File FileName="Assets\PlanetConqueror\Jogador_tiro.cs" Line="33" Column="1" />
-      <File FileName="Assets\TOOLS\code\base_db.cs" Line="1" Column="1" />
-      <File FileName="Assets\TOOLS\code\reader.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\inimigo_01.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\inimigo_02.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\inimigo_03.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\Jogador.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlanetConqueror\powerUP.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlanetConqueror\powerUP.cs" Line="18" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
