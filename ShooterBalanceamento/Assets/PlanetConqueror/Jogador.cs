@@ -43,6 +43,10 @@ public class Jogador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Jogador_move();
+		Jogdor_atira();
+		if(gameObject.GetComponent<AudioSource>().isPlaying == false){
+			gameObject.GetComponent<AudioSource>().Play ();
+		}
 		//Jogdor_atira();
 		if(vida <= 0){
 
@@ -68,14 +72,14 @@ public class Jogador : MonoBehaviour {
 
 
 
-		if(Input.GetKey(KeyCode.Space)){
+		/*if(Input.GetKey(KeyCode.Space)){
 			Jogdor_atira();
 			if(gameObject.GetComponent<AudioSource>().isPlaying == false){
 				gameObject.GetComponent<AudioSource>().Play ();
 			}
 
 
-		}
+		}*/
 
 	
 	}
@@ -113,12 +117,16 @@ public class Jogador : MonoBehaviour {
 
 			if(gameObject.GetComponent<Rigidbody>().velocity.z < 0){
 				Jog_vel_tiro = Jogador_velocidade_tiro;
+
 			}
 			else{
 				Jog_vel_tiro = Jogador_velocidade_tiro + gameObject.GetComponent<Rigidbody>().velocity.z;
 			}
 
 			Jogador_tiro.GetComponent<Rigidbody>().velocity += new Vector3(0.0f,0.0f,1.0f) * Jog_vel_tiro;
+
+
+
 
 		}
 	}

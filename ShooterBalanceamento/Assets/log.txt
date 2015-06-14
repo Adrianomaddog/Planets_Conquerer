@@ -1,166 +1,3 @@
-teste Jogador (-0.1, 1.0, 30.1) 24.49016
-teste torre 1 (-1.6, 0.6, 17.7) 33.13099
-teste torre (2.0, 0.6, 17.7) 35.06972
-teste torre 3 (-1.4, 0.6, 28.7) 36.74291
-teste torre 4 (1.7, 0.6, 28.7) 36.74672
-teste torre 2 (0.2, 0.6, 27.0) 40.9838
-teste Kamikaze 1 (0.0, 1.0, 39.1) 47.36574
-teste Kamikaze 5 (1.0, 1.0, 39.7) 48.39258
-teste Kamikaze 6 (-0.1, 1.0, 41.0) 49.61862
-teste Kamikaze 3 (2.0, 1.0, 53.5) 54.95282
-teste Kamikaze 2 (2.3, 1.0, 55.9) 55.9305
-teste Kamikaze 4 (2.5, 1.0, 58.4) 57.17307
-teste Kamikaze 8 (-2.3, 1.0, 69.4) 63.21965
-teste Kamikaze 7 (-2.4, 1.0, 71.5) 64.52853
-teste Kamikaze 9 (-2.4, 1.0, 74.2) 65.58891
-teste torre 7 (-0.6, 0.6, 93.5) 75.54545
-teste torre 5 (0.9, 0.6, 93.6) 76.40691
-teste brute (-1.1, 1.2, 120.9) 88.21916
-teste brute 1 (1.9, 1.1, 142.7) 101.9035
-teste Kamikaze 12 (-0.4, 1.0, 150.4) 108.6628
-teste torre 14 (0.2, 0.6, 212.9) 153.2339
-teste torre 11 (1.7, 0.6, 214.6) 154.3109
-teste torre 13 (2.0, 0.6, 216.8) 154.6126
-ggg torre (2.0, 0.6, 17.7) 11.50359
-ggg torre 1 (-1.6, 0.6, 17.7) 14.74915
-ggg torre 3 (-1.4, 0.6, 28.7) 14.91592
-qwertyuiop torre (2.0, 0.6, 17.7) 20.24876
-qwertyuiop torre 4 (1.7, 0.6, 28.7) 22.36959
-qwertyuiop torre 3 (-1.4, 0.6, 28.7) 22.53929
-qwertyuiop torre 1 (-1.6, 0.6, 17.7) 22.68838
-qwertyuiop torre 2 (0.2, 0.6, 27.0) 25.14043
-qwertyuiop Kamikaze 1 (-0.4, 1.0, 39.5) 32.54039
-qwertyuiop Kamikaze 6 (-0.3, 1.0, 42.7) 33.48907
-jyut torre 1 (-1.6, 0.6, 17.7) 17.28785
-jhgfd torre 1 (-1.6, 0.6, 17.7) 30.72457
-jhgfd torre (2.0, 0.6, 17.7) 33.16293
-jhgfd torre 3 (-1.4, 0.6, 28.7) 33.71677
-jhgfd torre 4 (1.7, 0.6, 28.7) 34.10265
-jhgfd torre 2 (0.2, 0.6, 27.0) 35.8597
-jhgfd Kamikaze 1 (-0.4, 1.0, 39.3) 44.06031
-jhgfd Kamikaze 5 (0.8, 1.0, 40.0) 45.04013
-sss torre 1 (-1.6, 0.6, 17.7) 22.26278
-sss torre (2.0, 0.6, 17.7) 25.75793
-sss torre 4 (1.7, 0.6, 28.7) 26.50258
-sss Kamikaze 1 (-0.8, 1.0, 39.2) 35.95654
-sss Kamikaze 5 (0.2, 1.0, 39.7) 37.18221
-ggggg torre (2.0, 0.6, 17.7) 16.14815
-ggggg torre 2 (0.2, 0.6, 27.0) 16.19671
-ggggg torre 3 (-1.4, 0.6, 28.7) 21.48537
-ggggg Kamikaze 1 (-0.6, 1.0, 39.2) 27.60355
-ggggg Kamikaze 6 (-0.4, 1.0, 42.5) 28.52367
-ggggg Kamikaze 5 (0.5, 1.0, 39.4) 29.16468
-kdkdkdkdk torre (2.0, 0.6, 17.7) 21.85934
-kdkdkdkdk torre 4 (1.7, 0.6, 28.7) 24.49358
-kdkdkdkdk torre 2 (0.2, 0.6, 27.0) 27.58212
-kdkdkdkdk Kamikaze 1 (-0.5, 1.0, 39.5) 34.666
-kdkdkdkdk Kamikaze 5 (0.6, 1.0, 39.9) 36.01243
-bsbsbs torre 1 (-1.6, 0.6, 17.7) 13.93798
-bsbsbs torre 3 (-1.4, 0.6, 28.7) 16.7408
-bsbsbs torre 2 (0.2, 0.6, 27.0) 19.78854
-jdjjdjd torre 1 (-1.6, 0.6, 17.7) 15.89324
-jdjjdjd torre 3 (-1.4, 0.6, 28.7) 19.14202
-jdjjdjd torre (2.0, 0.6, 17.7) 19.73872
-jdjjdjd torre 2 (0.2, 0.6, 27.0) 22.10846
-jdjjdjd Kamikaze 1 (-0.7, 1.0, 39.1) 29.78818
-jdjjdjd Kamikaze (-1.4, 1.0, 39.4) 31.14861
-jdjjdjd Kamikaze 6 (-0.6, 1.0, 41.4) 31.62931
-jfjfjfjf torre 1 (-1.6, 0.6, 17.7) 14.89344
-jfjfjfjf torre (2.0, 0.6, 17.7) 16.53192
-jfjfjfjf torre 3 (-1.4, 0.6, 28.7) 18.64166
-jfjfjfjf torre 4 (1.7, 0.6, 28.7) 18.64292
-jfjfjfjf torre 2 (0.2, 0.6, 27.0) 21.13215
-jfjfjfjf Kamikaze 1 (-0.3, 1.0, 39.4) 28.89272
-jfjfjfjf Kamikaze (-1.2, 1.0, 39.8) 30.24435
-jfjfjfjf Jogador (-1.5, 1.0, 71.2) 46.26992
-asdewq torre (2.0, 0.6, 17.7) 21.61003
-asdewq torre 1 (-1.6, 0.6, 17.7) 24.47744
-asdewq torre 2 (0.2, 0.6, 27.0) 27.05384
-asdewq torre 4 (1.7, 0.6, 28.7) 28.11754
-asdewq Kamikaze 5 (0.6, 1.0, 39.6) 36.77101
-asdewq Kamikaze 3 (1.9, 1.0, 53.4) 43.30474
-asdewq Jogador (-1.7, 1.0, 68.9) 51.38922
-vv torre 1 (-1.6, 0.6, 17.7) 14.70415
-vv torre (2.0, 0.6, 17.7) 15.47725
-vv torre 2 (0.2, 0.6, 27.0) 15.54331
-vv torre 4 (1.7, 0.6, 28.7) 16.22512
-vv torre 3 (-1.4, 0.6, 28.7) 19.88497
-vv Kamikaze 1 (-0.4, 1.0, 39.5) 26.44418
-vv Kamikaze 5 (0.6, 1.0, 40.0) 27.59776
-vv Kamikaze (-1.3, 1.0, 39.3) 28.34877
-vv Kamikaze 3 (1.9, 1.0, 53.2) 34.75391
-vv Kamikaze 2 (2.2, 1.0, 55.7) 35.64682
-vv Kamikaze 4 (2.4, 1.0, 58.5) 36.59309
-vv Kamikaze 8 (-1.9, 1.0, 68.6) 43.59829
-vv Kamikaze 7 (-2.1, 1.0, 71.0) 44.50805
-vv Kamikaze 9 (-2.3, 1.0, 73.9) 45.40007
-vv torre 7 (-0.6, 0.6, 93.5) 55.07413
-vv torre 5 (0.9, 0.6, 93.6) 55.8539
-vv torre 6 (-2.2, 0.6, 93.6) 58.66378
-vv brute (-1.1, 1.2, 120.7) 67.56691
-vv brute 1 (1.9, 1.1, 138.0) 77.60457
-vv Kamikaze 12 (-0.3, 1.0, 150.5) 88.12868
-vv Kamikaze 10 (-0.4, 1.0, 152.7) 89.78869
-vv torre 12 (-1.4, 0.6, 214.6) 154.7114
-vv torre 15 (-1.6, 0.6, 216.8) 156.5541
-vv Kamikaze 25 (-3.0, 1.0, 237.9) 167.4982
-vv Kamikaze 23 (-1.9, 1.0, 236.0) 167.8018
-vv Kamikaze 22 (-0.6, 1.0, 237.4) 168.0491
-vv Kamikaze 21 (0.5, 1.0, 235.9) 168.1817
-vv Kamikaze 30 (-1.9, 1.0, 252.7) 176.8282
-vv Kamikaze 29 (-2.1, 1.0, 255.7) 177.181
-vv Kamikaze 26 (1.5, 1.0, 252.1) 177.5624
-vv Kamikaze 24 (1.5, 1.0, 254.0) 179.1077
-vv Kamikaze 27 (2.0, 1.0, 257.4) 179.47
-vv Kamikaze 31 (-1.5, 1.0, 256.9) 180.0077
-vv Kamikaze 19 (-0.1, 1.0, 271.0) 182.6491
-vv Kamikaze 20 (-0.9, 1.0, 271.0) 186.3458
-vv Kamikaze 18 (-0.3, 1.0, 273.6) 187.4404
-vv brute 4 (0.1, 1.1, 293.9) 195.7111
-vv torre 18 (1.1, 0.6, 306.2) 202.1869
-vv torre 16 (2.6, 0.6, 306.3) 202.2366
-vv torre 17 (-0.5, 0.6, 306.3) 202.2376
-vv torre 10 (0.6, 0.6, 310.1) 204.3485
-vv torre 8 (-0.9, 0.6, 310.0) 209.0262
-vv torre 9 (-2.5, 0.6, 310.1) 210.1065
-vv brute 3 (-1.6, 1.1, 340.1) 241.844
-vv brute 2 (2.5, 1.1, 341.8) 243.2928
-vv brute 5 (0.2, 1.1, 346.4) 243.3274
-vv Kamikaze 14 (-1.8, 1.0, 353.4) 247.1063
-vv Kamikaze 15 (-0.4, 1.0, 350.2) 249.0312
-vv Kamikaze 17 (-0.3, 1.0, 353.6) 249.4459
-vv Kamikaze 16 (0.7, 1.0, 350.3) 250.324
-vv torre 19 (-1.6, 0.6, 374.1) 261.5301
-vv torre 20 (-0.7, 0.6, 375.8) 261.7951
-vv torre 21 (1.8, 0.6, 375.8) 262.2
-vv torre 22 (2.5, 0.6, 374.0) 262.2993
-jjj torre (2.0, 0.6, 17.7) 11.55938
-jjj torre 1 (-1.6, 0.6, 17.7) 13.68875
-jjj torre 4 (1.7, 0.6, 28.7) 14.64892
-jjj torre 2 (0.2, 0.6, 27.0) 16.60916
-jjj torre 3 (-1.4, 0.6, 28.7) 19.56256
-jjj Kamikaze 1 (-0.2, 1.0, 38.2) 26.24149
-jjj Kamikaze 3 (1.5, 1.0, 53.7) 32.91653
-jjj Kamikaze 2 (2.1, 1.0, 55.6) 34.17599
-jjj Kamikaze 4 (2.5, 1.0, 58.3) 35.15635
-jjj Kamikaze 8 (-2.3, 1.0, 69.3) 41.23996
-jjj Kamikaze 7 (-2.3, 1.0, 71.8) 42.15232
-jjj Kamikaze 9 (-2.4, 1.0, 74.6) 43.08069
-tttest torre 1 (-1.6, 0.6, 17.7) 16.88852
-tttest torre 2 (0.2, 0.6, 27.0) 18.51499
-tttest torre (2.0, 0.6, 17.7) 19.03246
-tttest torre 3 (-1.4, 0.6, 28.7) 22.36829
-tttest torre 4 (1.7, 0.6, 28.7) 23.95279
-tttest Kamikaze 1 (-0.3, 1.0, 39.5) 29.32475
-tttest Kamikaze 5 (0.7, 1.0, 40.0) 30.49988
-tttest Kamikaze 6 (-0.3, 1.0, 41.1) 31.9445
-tttest Kamikaze 3 (2.0, 1.0, 53.4) 37.48594
-tttest Kamikaze 2 (2.3, 1.0, 55.4) 38.91203
-tttest Kamikaze 4 (2.4, 1.0, 57.7) 40.35542
-tttest Kamikaze 8 (-2.3, 1.0, 68.0) 47.1192
-tttest Kamikaze 7 (-2.4, 1.0, 70.8) 47.65705
-tttest Kamikaze 9 (-2.4, 1.0, 73.7) 48.60648
-tttest Jogador (-0.5, 1.1, 90.4) 60.60681
 yuio*torre_1*(-1.6, 0.6, 17.7)*11.963
 yuio*torre_3*(-1.4, 0.6, 28.7)*14.86661
 yuio*torre*(2.0, 0.6, 17.7)*15.20359
@@ -283,3 +120,53 @@ dsds*Kamikaze_4*(2.6, 1.0, 56.8)*76.52542
 nbnbnb*torre*(2.0, 0.6, 17.7)*15.67253
 nbnbnb*torre_1*(-1.6, 0.6, 17.7)*17.43918
 nbnbnb*torre_2*(0.2, 0.6, 27.0)*23.65116
+test_tiro*torre_1*(-1.6, 0.6, 17.7)*19.90663
+test_tiro*torre*(2.0, 0.6, 17.7)*22.77657
+test_tiro*torre_2*(0.2, 0.6, 27.0)*24.98475
+test_tiro*torre_3*(-1.4, 0.6, 28.7)*26.18534
+test_tiro*Kamikaze_1*(-0.7, 1.0, 35.8)*32.23279
+test_tiro*Kamikaze*(-1.3, 1.0, 37.7)*32.49755
+test_tiro*Kamikaze_3*(1.7, 1.0, 49.7)*39.93079
+test_tiro*Kamikaze_2*(2.2, 1.0, 52.5)*40.82718
+test_tiro*Kamikaze_4*(2.4, 1.0, 56.1)*41.79073
+test_tiro*Kamikaze_8*(-2.5, 1.0, 68.6)*47.10041
+test_tiro*Kamikaze_7*(-2.5, 1.0, 70.6)*48.35221
+test_tiro*Kamikaze_9*(-2.5, 1.0, 73.2)*49.59779
+test_tiro*torre_6*(-2.2, 0.6, 93.6)*60.68423
+test_tiro*torre_7*(-0.6, 0.6, 93.5)*63.14585
+test_tiro*brute*(-1.1, 1.2, 124.0)*74.99934
+test_tiro*brute_1*(1.9, 1.1, 139.2)*83.04996
+test_tiro*Kamikaze_12*(-0.4, 1.0, 149.8)*90.9053
+test_tiro*torre_14*(0.2, 0.6, 212.9)*134.66
+test_tiro*torre_11*(1.7, 0.6, 214.6)*135.9057
+test_tiro*torre_13*(2.0, 0.6, 216.8)*136.1875
+test_tiro*torre_15*(-1.6, 0.6, 216.8)*137.9828
+test_tiro*torre_12*(-1.4, 0.6, 214.6)*138.9817
+test_tiro*Kamikaze_21*(1.6, 1.0, 233.7)*148.2084
+test_tiro*Kamikaze_23*(0.1, 1.0, 231.9)*148.8904
+test_tiro*Kamikaze_22*(0.3, 1.0, 233.1)*149.3232
+test_tiro*Kamikaze_30*(-2.8, 1.0, 252.4)*156.3809
+test_tiro*Kamikaze_26*(0.0, 1.0, 248.5)*157.91
+test_tiro*Kamikaze_18*(0.1, 1.0, 270.2)*168.205
+test_tiro*brute_4*(0.1, 1.1, 296.7)*178.4849
+test_tiro*torre_17*(-0.5, 0.6, 306.3)*185.2987
+test_tiro*torre_8*(-0.9, 0.6, 310.0)*186.2609
+test_tiro*torre_10*(0.6, 0.6, 310.1)*186.8255
+test_tiro*torre_18*(1.1, 0.6, 306.2)*186.8419
+test_tiro*torre_16*(2.6, 0.6, 306.3)*187.7431
+test_tiro*torre_9*(-2.5, 0.6, 310.1)*190.0703
+test_tiro*brute_3*(-1.6, 1.1, 336.6)*199.8599
+test_tiro*brute_2*(2.5, 1.1, 342.2)*204.2989
+test_tiro*brute_5*(0.2, 1.1, 351.2)*207.9371
+test_tiro*Kamikaze_15*(-0.1, 1.0, 348.5)*208.8041
+test_tiro*Kamikaze_17*(-0.2, 1.0, 352.6)*209.5878
+test_tiro*Kamikaze_14*(-0.7, 1.0, 347.0)*210.1372
+test_tiro*torre_21*(1.8, 0.6, 375.8)*221.6412
+test_tiro*torre_22*(2.5, 0.6, 374.0)*221.7403
+test_tiro*torre_20*(-0.7, 0.6, 375.8)*223.887
+test_tiro*torre_19*(-1.6, 0.6, 374.1)*224.4169
+test_tiro*torre_33*(-1.4, 0.6, 411.2)*250.5303
+test_tiro*torre_34*(1.7, 0.6, 411.2)*251.1432
+test_tiro*torre_32*(2.0, 0.6, 413.4)*251.425
+test_tiro*torre_30*(-1.6, 0.6, 413.4)*253.7041
+test_tiro*torre_31*(0.2, 0.6, 412.4)*255.6798

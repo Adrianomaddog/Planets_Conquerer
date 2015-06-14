@@ -38,6 +38,8 @@ public class inimigo_01 : MonoBehaviour {
 
 
 			if(liga == true){
+
+			Destroy(gameObject , 8.0f);
 				gameObject.GetComponent<NavMeshAgent>().enabled = true;
 				if(agent.remainingDistance < 0.5f){
 					agent.destination = final.GetComponent<Transform>().position;

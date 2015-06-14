@@ -1,12 +1,3 @@
-tttest_torre_(2.0, 0.6, 17.7)_10
-tttest_torre 1_(-1.6, 0.6, 17.7)_10
-tttest_torre_(2.0, 0.6, 17.7)_10
-tttest_torre 1_(-1.6, 0.6, 17.7)_10
-tttest_torre_(2.0, 0.6, 17.7)_10
-tttest_torre 1_(-1.6, 0.6, 17.7)_10
-tttest_torre_(2.0, 0.6, 17.7)_10
-tttest_torre 1_(-1.6, 0.6, 17.7)_10
-
 yuio*torre*(2.0, 0.6, 17.7)*20
 yuio*torre_1*(-1.6, 0.6, 17.7)*10
 yuio*torre*(2.0, 0.6, 17.7)*20
@@ -5222,4 +5213,7 @@ yuio*Kamikaze_10*(0.0, 1.0, 153.4)*40
 yuio*Kamikaze_11*(1.3, 1.0, 148.6)*35
 yuio*Kamikaze_13*(-0.2, 1.0, 148.8)*40
 yuio*Kamikaze_12*(0.8, 1.0, 146.2)*20
-yuio*Kamikaze_10*(0.0, 1.0, 152.6)*40
+tttt*Kamikaze_10*(0.0, 1.0, 152.6)*40
+tttt*Kamikaze_10*(0.0, 1.0, 152.6)*40
+aaaaa*Kamikaze_10*(0.0, 1.0, 152.6)*40
+aaaaa*Kamikaze_10*(0.0, 1.0, 152.6)*40

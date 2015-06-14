@@ -63,6 +63,8 @@
      <Compile Include="Assets\PlanetConqueror\salvar.cs" />
      <Compile Include="Assets\PlanetConqueror\tiro.cs" />
      <Compile Include="Assets\TOOLS\code\base_db.cs" />
+     <Compile Include="Assets\TOOLS\code\jog.cs" />
+     <Compile Include="Assets\TOOLS\code\metrica.cs" />
      <Compile Include="Assets\TOOLS\code\reader.cs" />
      <None Include="Assets\log2.txt" />
      <None Include="Assets\log.txt" />
